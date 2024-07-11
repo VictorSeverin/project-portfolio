@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollArea } from "./ui/scroll-area";
-import { Description } from "@headlessui/react";
 import bridalensHero from "@/public/bridalens-hero.png";
 import classSchedule from "@/public/class_schedule.png";
 import tribeMeet from "@/public/tribe_meet.png";
