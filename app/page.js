@@ -8,7 +8,7 @@ export default function Home() {
   return (
     //<main className="flex min-h-screen flex-col items-center justify-between p-24">
 
-    <div className="h-screen w-full text-white rounded-md bg-gradient-to-t to-slate-800 from-gray-900 flex flex-col items-center antialiased ">
+    <div className="h-full w-full text-white rounded-md bg-gradient-to-t to-slate-800 from-gray-900 flex flex-col items-center antialiased ">
       <div className="flex flex-col md:flex-row py-20 md:py-32 justify-between w-full max-w-7xl  h-full ">
         <div className=" flex flex-col gap-20 h-full mx-5">
           <div className="max-w-xl text-wrap flex flex-col justify-start items-start ">
@@ -86,6 +86,7 @@ export default function Home() {
         </div>
         <Projects />
       </div>
+      <div className="">Last updated: July 10,2024</div>
     </div>
   );
 }

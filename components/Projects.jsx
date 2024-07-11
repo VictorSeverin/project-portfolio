@@ -37,8 +37,8 @@ export default function Projects() {
   ];
 
   return (
-    <ScrollArea className="h-full md:h-3/3 w-full md:w-2/4 rounded-md border border-gray-800">
-      <div className="p-4">
+    <>
+      <div className="p-4 md:hidden">
         <h4 className="mb-4 text-xl font-bold leading-none underline text-white">
           Projects
         </h4>
@@ -63,6 +63,33 @@ export default function Projects() {
           </Link>
         ))}
       </div>
-    </ScrollArea>
+      <ScrollArea className="h-full md:h-3/3 w-full md:w-2/4 rounded-md  border-gray-800 hidden md:block">
+        <div className="p-4">
+          <h4 className="mb-4 text-xl font-bold leading-none underline text-white">
+            Projects
+          </h4>
+          {projects.map((project, index) => (
+            <Link
+              href={project?.link ? project?.link : "#"}
+              key={index}
+              className="p-5 border hover:scale-105 border-slate-500 transition transform duration-300 rounded-lg my-5 shadow-lg flex gap-5"
+            >
+              <div className="w-30 h-30 relative">
+                <Image
+                  src={project?.image}
+                  className="rounded-md "
+                  fill
+                  alt="project showcase image"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-bold">{project.title}</span>
+                <span className="text-sm italic">{project.description}</span>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </ScrollArea>
+    </>
   );
 }
