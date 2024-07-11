@@ -5,6 +5,7 @@ import bridalensHero from "@/public/bridalens-hero.png";
 import classSchedule from "@/public/class_schedule.png";
 import tribeMeet from "@/public/tribe_meet.png";
 import Image from "next/image";
+import Link from "next/link";
 export default function Projects() {
   const projects = [
     {
@@ -24,7 +25,7 @@ export default function Projects() {
       description:
         "In collaboration with a team of developers, designed and executed a React-based class scheduling application, empowering students to effortlessly access and view class offerings for both current and previous semesters.",
       image: classSchedule,
-      link: "https://https://www.csus.edu/class-schedule/",
+      link: "https://www.csus.edu/class-schedule/",
     },
     {
       title: "Robo-Track Videogame",
@@ -36,28 +37,30 @@ export default function Projects() {
   ];
 
   return (
-    <ScrollArea className="h-2/3 w-1/3 rounded-md ">
+    <ScrollArea className="h-full md:h-3/3 w-full md:w-2/4 rounded-md border border-gray-800">
       <div className="p-4">
         <h4 className="mb-4 text-xl font-bold leading-none underline text-white">
           Projects
         </h4>
         {projects.map((project, index) => (
-          <div
+          <Link
+            href={project?.link ? project?.link : "#"}
             key={index}
-            className=" p-5  border rounded-lg my-5 drop-shadow-lg flex gap-5"
+            className="p-5 border hover:scale-105 border-slate-500 transition transform duration-300 rounded-lg my-5 shadow-lg flex gap-5"
           >
-            <Image
-              src={project?.image}
-              className="rounded-md"
-              width="120"
-              height="80"
-              alt="project showcase image "
-            />
+            <div className="w-30 h-30 relative">
+              <Image
+                src={project?.image}
+                className="rounded-md "
+                fill
+                alt="project showcase image"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="font-bold">{project.title}</span>
               <span className="text-sm italic">{project.description}</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </ScrollArea>
