@@ -24,7 +24,7 @@ export default function Home() {
             <h2 className="font-bold underline">Work Experience</h2>
             <ul className="list-disc pl-7 text-lg">
               <li className="">
-                Software Engineering Intern at{" "}
+                Software Engineer at{" "}
                 <span className="italic">
                   Employment Development Department - Sacramento,CA
                 </span>
@@ -86,7 +86,7 @@ export default function Home() {
         </div>
         <Projects />
       </div>
-      <div className="">Last updated: July 10,2024</div>
+      <div className="">Last updated: October 1st,2024</div>
     </div>
   );
 }

@@ -9,9 +9,17 @@ export default function Projects() {
   const projects = [
     {
       title: "BridaLens",
-      description: "QR Code digital gallery",
+      description:
+        "SaaS application designed for event hosts to seamlessly collect and organize guest photos. The app generates a unique QR code for each event, allowing attendees to upload their images without the need for any app downloads or signups.",
       image: bridalensHero,
       link: "https://bridalens.com",
+    },
+    {
+      title: "WouldPurchase",
+      description:
+        "Currently working on an app that revolutionizes the online marketplace by flipping the traditional model. Instead of sellers posting items for sale, buyers post their needs for goods or services, and sellers can bid or respond to these requests. ",
+      image: bridalensHero,
+      link: "https://wouldpurchase.vercel.app/",
     },
     {
       title: "TribeMeet",
