@@ -22,6 +22,13 @@ export default function Projects() {
       link: "https://wouldpurchase.vercel.app/",
     },
     {
+      title: "Caroling Router",
+      description:
+        "Developed a web based solution for finding the most efficient route for carolers to visit multiple locations. The app uses the Google Maps API to calculate the shortest path between multiple addresses, and provides a printable list of directions.",
+      image: bridalensHero,
+      link: "https://carol-router.vercel.app/",
+    },
+    {
       title: "TribeMeet",
       description:
         "A component-based web video conferencing application that integrates with ABetterLife's existing software infrastructure and resolves compatibility issues, elevates the user experience, and delivers a robust API for detailed user analytics.",
